@@ -1,131 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive One-Page Layout</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-    <!-- Navigation Bar -->
-    <div class="topnav" id="navbar">
-        <a href="#home" class="tab-link active">Home</a>
-        <a href="#contact" class="tab-link">Contact</a>
-        <a href="#skills" class="tab-link">Skills</a>
-        <a href="#experience" class="tab-link">Experience</a>
-        <a href="#education" class="tab-link">Education</a>
-        <a href="#project" class="tab-link">Projects</a>
-        <a href="#help" class="tab-link">Help</a>
+  <!-- Navigation -->
+  <div class="topnav">
+    <a href="#home" class="tab-link active">Home</a>
+    <a href="#contact" class="tab-link">Contact</a>
+    <a href="#skills" class="tab-link">Skills</a>
+    <a href="#experience" class="tab-link">Experience</a>
+    <a href="#education" class="tab-link">Education</a>
+    <a href="#project" class="tab-link">Projects</a>
+  </div>
+
+  <!-- Home -->
+  <div id="home" class="section full-width home-section">
+    <h2 class="section-title">Welcome</h2>
+    <p>Welcome to my portfolio website! Here you will find details about my skills, experience, and projects.</p>
+  </div>
+
+  <!-- Contact & Skills -->
+  <div class="section row-box">
+    <div id="contact" class="box contact-box">
+      <h2 class="section-title">Contact</h2>
+      <p>Email: you@example.com</p>
+      <p>Phone: (123) 456-7890</p>
+      <img src="images/my_image.PNG" alt="Your Picture" class="profile-img" />
     </div>
 
-    <!-- Home Section -->
-    <div id="home" class="section">
-        <h2>Welcome to My Personal Website</h2>
-        <p>This section displays everything on the screen.</p>
+    <div id="skills" class="box skills-box">
+      <h2 class="section-title">Skills</h2>
+      <ul class="skills-list">
+        <li>JavaScript</li>
+        <li>HTML & CSS</li>
+        <li>React / Vue</li>
+        <li>Node.js</li>
+        <li>MongoDB</li>
+      </ul>
     </div>
+  </div>
 
-    <!-- Contact & Skills Section -->
-    <div id="contact-skill" class="section contact-skill-section">
-        <div id="contact" class="contact">
-            <h2>Contact</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <p>Feel free to get in touch with me!</p>
-                </div>
-                <div class="contact-img">
-                    <img src="your-image.jpg" alt="Your Picture">
-                </div>
-            </div>
-        </div>
-
-        <div id="skills" class="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>JavaScript</li>
-                <li>HTML & CSS</li>
-                <li>React</li>
-                <li>Node.js</li>
-                <li>Python</li>
-            </ul>
-        </div>
+  <!-- Experience -->
+  <div id="experience" class="section box experience-section">
+    <h2 class="section-title">Experience</h2>
+    <div class="item">
+      <h3>Software Developer at XYZ Corp</h3>
+      <p>Built modern web apps using React and Node.js</p>
     </div>
-
-    <!-- Experience Section -->
-    <div id="experience" class="section">
-        <h2>Experience</h2>
-        <div class="experience-list">
-            <div class="experience-item">
-                <h3>Software Developer at XYZ Corp</h3>
-                <p>Worked on developing web applications using React and Node.js.</p>
-            </div>
-            <div class="experience-item">
-                <h3>Frontend Developer at ABC Ltd.</h3>
-                <p>Worked on building the user interface with JavaScript, HTML, and CSS.</p>
-            </div>
-        </div>
+    <div class="item">
+      <h3>Frontend Developer at ABC Ltd</h3>
+      <p>Developed user interfaces with HTML, CSS, and JavaScript</p>
     </div>
+  </div>
 
-    <!-- Education Section -->
-    <div id="education" class="section">
-        <h2>Education</h2>
-        <div class="education-list">
-            <div class="education-item">
-                <h3>Bachelor of Science in Computer Science</h3>
-                <p>XYZ University, 2021</p>
-            </div>
-            <div class="education-item">
-                <h3>High School Diploma</h3>
-                <p>ABC High School, 2017</p>
-            </div>
-        </div>
+  <!-- Education -->
+  <div id="education" class="section box education-section">
+    <h2 class="section-title">Education</h2>
+    <div class="item">
+      <h3>Bachelor's in Computer Science</h3>
+      <p>XYZ University, 2021</p>
     </div>
-
-    <!-- Projects Section -->
-    <div id="project" class="section">
-        <h2>Projects</h2>
-        <div class="projects-list">
-            <div class="project-item">
-                <h3>Project 1</h3>
-                <p>Description of Project 1</p>
-            </div>
-            <div class="project-item">
-                <h3>Project 2</h3>
-                <p>Description of Project 2</p>
-            </div>
-            <div class="project-item">
-                <h3>Project 3</h3>
-                <p>Description of Project 3</p>
-            </div>
-            <div class="project-item">
-                <h3>Project 4</h3>
-                <p>Description of Project 4</p>
-            </div>
-            <div class="project-item">
-                <h3>Project 5</h3>
-                <p>Description of Project 5</p>
-            </div>
-        </div>
+    <div class="item">
+      <h3>High School Diploma</h3>
+      <p>ABC High School, 2017</p>
     </div>
+  </div>
 
-    <!-- Help Section -->
-    <div id="help" class="section">
-        <h2>Help</h2>
-        <p>This section provides basic information and FAQs about the website.</p>
+  <!-- Projects -->
+  <div id="project" class="section box project-section">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="images/my_image1.PNG" alt="Project 1" class="project-img" />
+        <h3>Project 1</h3>
+        <p>Description 1</p>
+      </div>
+      <div class="project-card">
+        <img src="images/my_image3.PNG" alt="Project 2" class="project-img" />
+        <h3>Project 2</h3>
+        <p>Description 2</p>
+      </div>
+      <div class="project-card">
+        <img src="images/my_image3.PNG" alt="Project 3" class="project-img" />
+        <h3>Project 3</h3>
+        <p>Description 3</p>
+      </div>
+      <div class="project-card">
+        <img src="images/my_image4.PNG" alt="Project 4" class="project-img" />
+        <h3>Project 4</h3>
+        <p>Description 4</p>
+      </div>
+      <div class="project-card">
+        <img src="images/my_image4.PNG" alt="Project 4" class="project-img" />
+        <h3>Project 4</h3>
+        <p>Description 4</p>
+      </div>
     </div>
+  </div>
 
-    <script>
-        // Smooth scrolling to sections
-        document.querySelectorAll('.tab-link').forEach(link => {
-            link.addEventListener('click', function(e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href').substring(1);  // Get the ID of the target section
-                document.getElementById(targetId).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 My Portfolio | All Rights Reserved</p>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com" target="_blank">LinkedIn</a> | 
+      <a href="https://github.com" target="_blank">GitHub</a> | 
+      <a href="mailto:you@example.com">Email</a>
+    </div>
+  </footer>
+
+  <!-- Scroll Script -->
+  <script>
+    document.querySelectorAll('.tab-link').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        document.getElementById(targetId).scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
 
 </body>
 </html>
