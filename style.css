@@ -1,0 +1,138 @@
+/* Basic Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation Bar */
+.topnav {
+    display: flex;
+    background-color: #333;
+    justify-content: center;
+    padding: 14px;
+    box-shadow: 0 4px 2px -2px gray;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.topnav a {
+    color: white;
+    padding: 14px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #4CAF50;
+}
+
+/* Sections Styling */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Contact & Skills Section */
+.contact-skill-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.contact {
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+}
+
+.contact-info {
+    padding: 10px;
+}
+
+.contact-img img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+/* Skills Section */
+.skills {
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+}
+
+.skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills li {
+    padding: 8px;
+    background-color: #f4f4f4;
+    margin: 5px 0;
+    border-radius: 6px;
+}
+
+/* Experience and Education Sections */
+.experience-list, .education-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.experience-item, .education-item {
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Projects Section */
+.projects-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.project-item {
+    background-color: #ffeb3b;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Help Section */
+#help {
+    background-color: #9c27b0;
+    color: white;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    .topnav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contact-skill-section {
+        grid-template-columns: 1fr;
+    }
+
+    .projects-list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .projects-list {
+        grid-template-columns: 1fr;
+    }
+}
